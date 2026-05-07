@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 建造者日报 — 5月8日</title>
+<style>
+  :root {
+    --bg: #fafaf7;
+    --surface: #ffffff;
+    --ink: #1a1a1a;
+    --ink-soft: #4a4a4a;
+    --ink-mute: #8a8a8a;
+    --accent: #c8483a;
+    --accent-soft: #fdf1ef;
+    --border: #ececea;
+    --link: #c8483a;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Segoe UI", Roboto, sans-serif;
+    background: var(--bg);
+    color: var(--ink);
+    line-height: 1.75;
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  .container {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 48px 24px 80px;
+  }
+  header {
+    border-bottom: 2px solid var(--ink);
+    padding-bottom: 24px;
+    margin-bottom: 40px;
+  }
+  .kicker {
+    font-size: 12px;
+    letter-spacing: 0.2em;
+    color: var(--accent);
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+  }
+  h1 {
+    font-size: 36px;
+    line-height: 1.25;
+    margin: 0 0 12px;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+  }
+  .meta {
+    color: var(--ink-mute);
+    font-size: 14px;
+  }
+  section {
+    margin: 48px 0;
+  }
+  h2 {
+    font-size: 22px;
+    margin: 0 0 24px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--border);
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  h2 .icon {
+    font-size: 20px;
+  }
+  article.entry {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 24px 28px;
+    margin-bottom: 20px;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  }
+  article.entry:hover {
+    border-color: #d8d8d4;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.04);
+  }
+  article.entry.podcast {
+    background: var(--accent-soft);
+    border-color: #f4d9d3;
+  }
+  .entry-header {
+    margin-bottom: 14px;
+  }
+  .author {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--ink);
+    display: inline;
+  }
+  .role {
+    color: var(--ink-mute);
+    font-size: 14px;
+    font-weight: 400;
+  }
+  .podcast-title {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 12px;
+    line-height: 1.4;
+  }
+  .key-point {
+    background: rgba(200, 72, 58, 0.08);
+    border-left: 3px solid var(--accent);
+    padding: 12px 16px;
+    margin: 14px 0 20px;
+    font-size: 15px;
+    color: var(--ink-soft);
+    border-radius: 0 6px 6px 0;
+  }
+  .key-point strong {
+    color: var(--accent);
+  }
+  p {
+    margin: 0 0 14px;
+    color: var(--ink-soft);
+  }
+  p:last-of-type {
+    margin-bottom: 16px;
+  }
+  .source-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    color: var(--link);
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 500;
+    padding: 4px 0;
+    border-bottom: 1px solid transparent;
+    transition: border-color 0.15s ease;
+    word-break: break-all;
+  }
+  .source-link:hover {
+    border-bottom-color: var(--link);
+  }
+  .source-link::before {
+    content: "→";
+    margin-right: 2px;
+  }
+  footer {
+    margin-top: 64px;
+    padding-top: 24px;
+    border-top: 1px solid var(--border);
+    text-align: center;
+    color: var(--ink-mute);
+    font-size: 13px;
+  }
+  footer .brand {
+    font-weight: 600;
+    color: var(--ink-soft);
+  }
+  @media (max-width: 600px) {
+    .container { padding: 32px 18px 60px; }
+    h1 { font-size: 28px; }
+    article.entry { padding: 20px; }
+    h2 { font-size: 19px; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <header>
+    <div class="kicker">AI Builders Digest</div>
+    <h1>AI 建造者日报</h1>
+    <div class="meta">2026 年 5 月 8 日 · 跟踪那些真正在造东西的人</div>
+  </header>
+
+  <section>
+    <h2><span class="icon">𝕏</span> 推特动态</h2>
+
+    <article class="entry">
+      <div class="entry-header">
+        <span class="author">Peter Yang</span>
+        <span class="role">（Roblox 产品负责人，AI Newsletter 作者）</span>
+      </div>
+      <p>Peter 从 Dario 和 Daniela 的最新访谈里提炼出几条核心观点。Dario 透露 Anthropic 今年早些时候看到「使用量和收入 80 倍增长」，并直言「我们会尽可能多地获取算力」。Daniela 给创始人的建议是「为指数增长而构建」——有些产品用当前模型做不出来，但随着模型进化会跑起来，这对内部实验提出了更高要求：「你必须真的用模型试一下才知道可不可行。」</p>
+      <p>两人还抛出一个有意思的观察：「产品在模型变得太好时反而会触碰天花板。今天让模型变聪明的方式，在 agentic 和 Claude Code 工作流里的体现远比 chatbot 明显。」另一个值得玩味的点：「模型正在从写代码进化到做软件工程，再进化到直接经营一门生意。」</p>
+      <a class="source-link" href="https://x.com/petergyang/status/2052123472583864780" target="_blank" rel="noopener">x.com/petergyang/status/2052123472583864780</a>
+    </article>
+
+    <article class="entry">
+      <div class="entry-header">
+        <span class="author">Thariq</span>
+        <span class="role">（Anthropic Claude Code 团队）</span>
+      </div>
+      <p>Thariq 转述 Dario 在台上的原话：「我们每天都在尝试获取更多算力并把它转交给你们，如果慢了抱歉，但我们会尽可能多地买。」这条推文 24 小时收获 1300+ 赞，某种程度上代表了开发者社区对 Anthropic 算力紧张的集体情绪——限流仍是当前使用体验里最痛的部分。</p>
+      <a class="source-link" href="https://x.com/trq212/status/2052250816720056604" target="_blank" rel="noopener">x.com/trq212/status/2052250816720056604</a>
+    </article>
+
+    <article class="entry">
+      <div class="entry-header">
+        <span class="author">Zara Zhang</span>
+        <span class="role">（Builder / YouTube 创作者）</span>
+      </div>
+      <p>Zara 从 Boris Cherny 的访谈里挑出三个最颠覆认知的细节：一、Boris 随口提到「晚上有几千个 agent 在并行跑」；二、他现在几乎只在手机上用 Claude Code；三、他抛出一个大胆预测——「编程会成为新的读写能力」。</p>
+      <p>这三点合起来描绘了一种 Anthropic 内部已经到达、但外界还完全没进入的工作方式：不是坐在电脑前和 agent 打字，而是像编排一支隐形团队那样管理数百乃至数千个并行任务。</p>
+      <a class="source-link" href="https://x.com/zarazhangrui/status/2052277868319916402" target="_blank" rel="noopener">x.com/zarazhangrui/status/2052277868319916402</a>
+    </article>
+
+    <article class="entry">
+      <div class="entry-header">
+        <span class="author">Claude 官方</span>
+        <span class="role">（Anthropic）</span>
+      </div>
+      <p>Claude 在 Code with Claude 大会上一口气放出两个新能力。一是 <strong>Outcomes</strong>：「你写一份 rubric，一个独立的 grader 检查输出，agent 会自己迭代直到达标」，还支持 webhook 通知——本质是把质量标准从"人工检查"变成"规则自动判分 + 自动重试"。</p>
+      <p>二是 <strong>Dreaming</strong>：「复盘 agent 过去的会话，提取模式，整理成记忆」，让 agent 真的能越用越懂你。两个功能都指向同一件事：把 agent 从"一次性执行者"升级成"持续学习 + 自我优化"的长期工作者。</p>
+      <a class="source-link" href="https://x.com/claudeai/status/2052067400690851842" target="_blank" rel="noopener">x.com/claudeai/status/2052067400690851842</a>
+    </article>
+  </section>
+
+  <section>
+    <h2><span class="icon">📻</span> 播客精选</h2>
+
+    <article class="entry podcast">
+      <div class="podcast-title">Training Data：「Anthropic Boris Cherny：编程的印刷机时刻」</div>
+
+      <div class="key-point">
+        <strong>关键观点：</strong>Claude Code 之父 Boris 判断编程对他而言「已经被解决了」——模型写他 100% 的代码，一天能推 150 个 PR。更激进的预测是：编程会像读写能力一样被完全民主化，且「比五十年快得多」。
+      </div>
+
+      <p>Boris 分享了一个让全场震惊的工作流：他现在主要在<strong>手机上</strong>写代码。「Claude app 左边有个 code tab，我通常挂着 5 到 10 个 session，每个 session 下面跑一堆 agent，当前大概有几百个 agent 在跑，晚上会有几千个做更深的活。」</p>
+
+      <p>他最爱用的功能是 <code>/loop</code>——让 Claude 用 cron 调度一个重复任务，「我现在有几十个 loop 在跑：一个帮我盯 PR、修 CI、自动 rebase；一个保持 CI 健康、自动修 flaky 测试；还有一个每 30 分钟从 Twitter 抓反馈并聚类给我。」这已经不是"用 AI 写代码"，而是"指挥一支隐形团队持续产出"。</p>
+
+      <p>关于 SaaSpocalypse，Boris 的判断很冷静。他引用 Hamilton Helmer 的《7 Powers》框架，认为有些护城河会被 AI 削弱——比如 switching cost（模型可以帮你一键搬家）和 process power：「4.7 对任何目标都能做爬山优化，给它一个 target 它会一直迭代到完成。」但 network effects、scale economies、cornered resources 这些老护城河基本不受影响。真正的结论是：「未来十年会多出 10 倍数量的颠覆性创业公司，因为一家小团队能建出跟大公司同等价值的产品，而大公司被内部流程和变革阻力拖住。」</p>
+
+      <p>最有历史感的类比是关于印刷机。「1400 年代印刷机发明前，欧洲只有 10% 的人识字。印刷机出现后 50 年里，欧洲出版的书籍量超过前一千年总和，书的成本降了 100 倍。又过了几百年，全球识字率升到 70%。」他的预测是：「软件会被完全民主化——而且比 50 年快得多。」一个推论让人耳目一新：最适合写财务软件的人不是工程师，而是一个真正懂业务的会计，因为「领域知识才是难的部分，写代码反而是容易的」。</p>
+
+      <p>Boris 还抛出一个组织层面的观察：Anthropic 内部所有代码都由模型写，所有 SQL 都是模型生成的，「我的 Claude 之间会通过 Slack 互相对话，跟其他人的 Claude 协作解决未知问题」。他认为 Anthropic 领先外界的不是技术——模型大家都能用——而是「组织结构和流程的重构」，这才是同行真正要追赶的部分。</p>
+
+      <a class="source-link" href="https://www.youtube.com/playlist?list=PLOhHNjZItNnMm5tdW61JpnyxeYH5NDDx8" target="_blank" rel="noopener">youtube.com · Training Data 播客</a>
+    </article>
+  </section>
+
+  <footer>
+    <div class="brand">AI Builders Digest</div>
+    <div>内容来自 follow-builders · 生成于 2026-05-08</div>
+  </footer>
+
+</div>
+</body>
+</html>
